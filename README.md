@@ -83,7 +83,7 @@ android_dev.skills == [
 ```
 
 It should have one additional method: `create_smooth_mobile_app`.
-It should print a following string `"{name}is creating a mobile app..."`
+It should print a following string `"{name} is creating a mobile app..."`
 where `name` is the `name` of engineer and return UX of the created app: `"Ads every three swipes"`.
 
 ```python
