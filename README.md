@@ -61,11 +61,11 @@ backend_dev.skills == [
 
 It should have one additional method: `create_powerful_api`.
 It should print a following string `"{name} is creating an API..."`
-where `name` is the `name` of engineer and return address of the API: `"127.0.0.1:8000"`.
+where `name` is the `name` of engineer and return address of the API: `"http://127.0.0.1:8000"`.
 
 ```python
 address = backend_dev.create_powerful_api()  # "Bob is creating an API..."
-address == "127.0.0.1:8000"
+address == "http://127.0.0.1:8000"
 ```
 
 Write class `AndroidDeveloper`, 

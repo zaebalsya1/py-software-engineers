@@ -80,7 +80,7 @@ def test_create_awesome_web_page_method(engineer, printed_message):
 def test_create_powerful_api_method(engineer, printed_message):
     f = io.StringIO()
     with redirect_stdout(f):
-        assert engineer.create_powerful_api() == "127.0.0.1:8000"
+        assert engineer.create_powerful_api() == "http://127.0.0.1:8000"
     assert f.getvalue() == printed_message
 
 
