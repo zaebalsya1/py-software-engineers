@@ -15,7 +15,7 @@ takes a `skill` of string type and should add it to the `skills` list.
 ```python
 engineer = SoftwareEngineer("Max")
 engineer.skills == [] 
-engineer.learn_skiil("Python")
+engineer.learn_skill("Python")
 engineer.skills == ["Python"] 
 ```
 
@@ -40,7 +40,7 @@ where `name` is the `name` of the engineer
 and return the code of the created webpage: `"<h1>Hello world</h1>"`.
 
 ```python
-page = front_dev.create_awesome_web_page()  # "Alise is creating a webpage..."
+page = front_dev.create_awesome_web_page()  # "Alisa is creating a webpage..."
 page == "<h1>Hello world</h1>"
 ```
 
@@ -87,7 +87,7 @@ It should print a following string `"{name} is creating a mobile app..."`
 where `name` is the `name` of engineer and return UX of the created app: `"Ads every three swipes"`.
 
 ```python
-app = backend_dev.create_smooth_mobile_app()  # "Beth is creating a mobile app..."
+app = android_dev.create_smooth_mobile_app()  # "Beth is creating a mobile app..."
 app == "Ads every three swipes"
 ```
 
