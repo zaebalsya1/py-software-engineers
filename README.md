@@ -5,8 +5,8 @@
 Firstly, you should create `SoftwareEngineer` class, 
 which will be a parent for all other classes. 
 Its constructor should take one parameter: `name` of the 
-engineer. Also, it should have `skills` attribute - 
-a list of engineer's skills, such as `"Python"` or `"JavaScript"`.
+engineer. Also, engineer should have `skills` attribute - 
+a list of his/her skills, such as `"Python"` or `"JavaScript"`.
 `skills` should be initialised with empty list.
 
 `SoftwareEngineer` class should have one method: `learn_skill` that 
