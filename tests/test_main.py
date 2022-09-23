@@ -1,9 +1,10 @@
-import ast
-import inspect
 import io
 from contextlib import redirect_stdout
 
 import pytest
+from types import NoneType
+import typing
+from typing import Callable
 
 from app.main import SoftwareEngineer, FrontendDeveloper, BackendDeveloper, FullStackDeveloper, AndroidDeveloper
 
@@ -120,3 +121,59 @@ def test_create_web_application_method(engineer, printed_messages):
     with redirect_stdout(f):
         engineer.create_web_application()
     assert f.getvalue() == printed_messages
+
+
+@pytest.mark.parametrize(
+    "function,result",
+    [
+        (
+                SoftwareEngineer.__init__,
+                {"name": str,
+                 "return": NoneType}
+        ),
+        (
+                SoftwareEngineer.learn_skill,
+                {"skill": str,
+                 "return": NoneType}
+        ),
+        (
+                FrontendDeveloper.__init__,
+                {"name": str,
+                 "return": NoneType}
+        ),
+        (
+                FrontendDeveloper.create_awesome_web_page,
+                {"return": str}
+        ),
+        (
+                BackendDeveloper.__init__,
+                {"name": str,
+                 "return": NoneType}
+        ),
+        (
+                BackendDeveloper.create_powerful_api,
+                {"return": str}
+        ),
+        (
+                AndroidDeveloper.__init__,
+                {"name": str,
+                 "return": NoneType}
+        ),
+        (
+                AndroidDeveloper.create_smooth_mobile_app,
+                {"return": str}
+        ),
+        (
+                FullStackDeveloper.__init__,
+                {"name": str,
+                 "return": NoneType}
+        ),
+        (
+                FullStackDeveloper.create_web_application,
+                {"return": NoneType}
+        )
+    ]
+)
+def test_added_type_annotation(function: Callable, result: dict) -> None:
+    hints = typing.get_type_hints(function)
+    assert dict(hints) == result, "Add or fix type annotation for methods"
