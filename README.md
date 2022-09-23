@@ -1,6 +1,7 @@
 # Python boilerplate for GitHub tasks
 
-- Read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md) before start
+**Please note:** read [the guideline](https://github.com/mate-academy/py-task-guideline/blob/main/README.md)
+before starting.
 
 Firstly, you should create `SoftwareEngineer` class, 
 which will be a parent for all other classes. 
@@ -112,3 +113,5 @@ full_stack_dev.create_web_application()
 # Tom is creating an API...
 # Tom is creating a webpage...
 ```
+
+### Note: Check your code using this [checklist](checklist.md) before pushing your solution.
