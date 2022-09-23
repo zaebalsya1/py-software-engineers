@@ -2,7 +2,6 @@ import io
 from contextlib import redirect_stdout
 
 import pytest
-from types import NoneType
 import typing
 from typing import Callable
 
@@ -129,17 +128,17 @@ def test_create_web_application_method(engineer, printed_messages):
         (
                 SoftwareEngineer.__init__,
                 {"name": str,
-                 "return": NoneType}
+                 "return": type(None)}
         ),
         (
                 SoftwareEngineer.learn_skill,
                 {"skill": str,
-                 "return": NoneType}
+                 "return": type(None)}
         ),
         (
                 FrontendDeveloper.__init__,
                 {"name": str,
-                 "return": NoneType}
+                 "return": type(None)}
         ),
         (
                 FrontendDeveloper.create_awesome_web_page,
@@ -148,7 +147,7 @@ def test_create_web_application_method(engineer, printed_messages):
         (
                 BackendDeveloper.__init__,
                 {"name": str,
-                 "return": NoneType}
+                 "return": type(None)}
         ),
         (
                 BackendDeveloper.create_powerful_api,
@@ -157,7 +156,7 @@ def test_create_web_application_method(engineer, printed_messages):
         (
                 AndroidDeveloper.__init__,
                 {"name": str,
-                 "return": NoneType}
+                 "return": type(None)}
         ),
         (
                 AndroidDeveloper.create_smooth_mobile_app,
@@ -166,11 +165,11 @@ def test_create_web_application_method(engineer, printed_messages):
         (
                 FullStackDeveloper.__init__,
                 {"name": str,
-                 "return": NoneType}
+                 "return": type(None)}
         ),
         (
                 FullStackDeveloper.create_web_application,
-                {"return": NoneType}
+                {"return": type(None)}
         )
     ]
 )
