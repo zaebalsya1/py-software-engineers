@@ -15,9 +15,9 @@ takes a `skill` of string type and should add it to the `skills` list.
 
 ```python
 engineer = SoftwareEngineer("Max")
-engineer.skills == [] 
+# engineer.skills == [] 
 engineer.learn_skill("Python")
-engineer.skills == ["Python"] 
+# engineer.skills == ["Python"] 
 ```
 
 Write class `FrontendDeveloper`, 
@@ -28,11 +28,11 @@ Instances of this class should have the following default skills:
 
 ```python
 front_dev = FrontendDeveloper("Alisa")
-front_dev.skills == [
-    "JavaScript",
-    "HTML",
-    "CSS",
-]
+# front_dev.skills == [
+#     "JavaScript",
+#     "HTML",
+#     "CSS",
+# ]
 ```
 
 It should have one additional method: `create_awesome_web_page`.
@@ -42,7 +42,7 @@ and return the code of the created webpage: `"<h1>Hello world</h1>"`.
 
 ```python
 page = front_dev.create_awesome_web_page()  # "Alisa is creating a webpage..."
-page == "<h1>Hello world</h1>"
+# page == "<h1>Hello world</h1>"
 ```
 
 Write class `BackendDeveloper`, 
@@ -53,11 +53,11 @@ Instances of this class should have the following default skills:
 
 ```python
 backend_dev = BackendDeveloper("Bob")
-backend_dev.skills == [
-    "Python",
-    "SQL",
-    "Django",
-]
+# backend_dev.skills == [
+#     "Python",
+#     "SQL",
+#     "Django",
+# ]
 ```
 
 It should have one additional method: `create_powerful_api`.
@@ -66,7 +66,7 @@ where `name` is the `name` of engineer and return address of the API: `"http://1
 
 ```python
 address = backend_dev.create_powerful_api()  # "Bob is creating an API..."
-address == "http://127.0.0.1:8000"
+# address == "http://127.0.0.1:8000"
 ```
 
 Write class `AndroidDeveloper`, 
@@ -77,10 +77,10 @@ Instances of this class should have the following default skills:
 
 ```python
 android_dev = AndroidDeveloper("Beth")
-android_dev.skills == [
-    "Java", 
-    "Android studio",
-]
+# android_dev.skills == [
+#     "Java", 
+#     "Android studio",
+# ]
 ```
 
 It should have one additional method: `create_smooth_mobile_app`.
@@ -89,7 +89,7 @@ where `name` is the `name` of engineer and return UX of the created app: `"Ads e
 
 ```python
 app = android_dev.create_smooth_mobile_app()  # "Beth is creating a mobile app..."
-app == "Ads every three swipes"
+# app == "Ads every three swipes"
 ```
 
 Finally, create class `FullStackDeveloper` which should be a child of some already created classes.
@@ -99,14 +99,14 @@ and call `create_powerful_api`, `create_awesome_web_page` methods.
 
 ```python
 full_stack_dev = FullStackDeveloper("Tom")
-full_stack_dev.skills == [
-    "Python",
-    "SQL",
-    "Django",
-    "JavaScript",
-    "HTML",
-    "CSS",
-]
+# full_stack_dev.skills == [
+#     "Python",
+#     "SQL",
+#     "Django",
+#     "JavaScript",
+#     "HTML",
+#     "CSS",
+# ]
 
 full_stack_dev.create_web_application()
 # Tom started creating a web application...
