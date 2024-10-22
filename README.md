@@ -8,7 +8,7 @@ which will be a parent for all other classes.
 Its `__init__` method should take one parameter: `name` of the 
 engineer. Also, engineer should have `skills` attribute - 
 a list of his/her skills, such as `"Python"` or `"JavaScript"`.
-`skills` should be initialised with empty list.
+skills should be initialized as an empty list and will be extended by the child classes.
 
 `SoftwareEngineer` class should have one method: `learn_skill` that 
 takes a `skill` of string type and should add it to the `skills` list.
@@ -23,7 +23,7 @@ engineer.learn_skill("Python")
 Write class `FrontendDeveloper`, 
 which should be a child of class `SoftwareEngineer`. 
 Its `__init__` method also takes the `name` of the engineer. 
-Instances of this class should have the following default skills:
+Instances of this class should extend the skills list with the following default skills:
 `"JavaScript"`, `"HTML"`, `"CSS"`.
 
 ```python
@@ -48,7 +48,7 @@ page = front_dev.create_awesome_web_page()  # "Alisa is creating a webpage..."
 Write class `BackendDeveloper`, 
 which should be a child of class `SoftwareEngineer`. 
 Its `__init__` method also takes the `name` of the engineer. 
-Instances of this class should have the following default skills:
+Instances of this class should extend the skills list with the following default skills:
 `"Python"`, `"SQL"`, `"Django"`.
 
 ```python
@@ -72,7 +72,7 @@ address = backend_dev.create_powerful_api()  # "Bob is creating an API..."
 Write class `AndroidDeveloper`, 
 which should be a child of class `SoftwareEngineer`. 
 Its `__init__` method also takes the `name` of the engineer. 
-Instances of this class should have the following default skills:
+Instances of this class should extend the skills list with the following default skills:
 `"Java"`, `"Android studio"`.
 
 ```python
